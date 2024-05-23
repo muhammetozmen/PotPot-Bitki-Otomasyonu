@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="640.0" prefWidth="440.0" styleClass="anchor" stylesheets="@application.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginController">
+   <children>
+      <AnchorPane layoutY="39.0" prefHeight="600.0" prefWidth="400.0" style="-fx-background-radius: 20;" styleClass="navigatorH" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="39.0">
+         <children>
+            <ImageView fitHeight="109.0" fitWidth="175.0" layoutX="113.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/logo.png" />
+               </image>
+            </ImageView>
+            <RadioButton fx:id="radioButton_signIn" layoutX="179.0" layoutY="171.0" mnemonicParsing="false" selected="true">
+               <toggleGroup>
+                  <ToggleGroup fx:id="loginGroup" />
+               </toggleGroup>
+            </RadioButton>
+            <Label layoutX="106.0" layoutY="171.0" styleClass="text" text="Giriş Yap" />
+            <RadioButton fx:id="radioButton_signUp" layoutX="216.0" layoutY="171.0" mnemonicParsing="false" toggleGroup="$loginGroup" />
+            <Label layoutX="244.0" layoutY="171.0" styleClass="text" text="Kayıt Ol" />
+            <ImageView fitHeight="87.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true" rotate="90.0">
+               <image>
+                  <Image url="@img/plantCorner.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="313.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@img/plantCorner.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="96.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/plantCorner.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="87.0" fitWidth="96.0" layoutX="313.0" layoutY="513.0" pickOnBounds="true" preserveRatio="true" rotate="270.0">
+               <image>
+                  <Image url="@img/plantCorner.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtfield_userName" layoutX="191.0" layoutY="369.0" promptText="user/admin" styleClass="textField" />
+            <Label layoutX="65.0" layoutY="374.0" styleClass="textBold" text="Kullanıcı Adı:" />
+            <Label layoutX="63.0" layoutY="419.0" styleClass="textBold" text="Kullanıcı Şifresi:" />
+            <Button fx:id="btn_enter" layoutX="291.0" layoutY="464.0" mnemonicParsing="false" onAction="#clicked_btn_enter" text="İlerle" />
+            <Label fx:id="label_status" alignment="CENTER_RIGHT" layoutX="4.0" layoutY="469.0" prefHeight="16.0" prefWidth="281.0" styleClass="text" />
+            <ImageView fx:id="img_guardWorm" fitHeight="150.0" fitWidth="200.0" layoutX="116.0" layoutY="229.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@img/worm_login.png" />
+               </image>
+            </ImageView>
+            <PasswordField fx:id="txtfield_userPassword" layoutX="191.0" layoutY="414.0" promptText="1234/root" styleClass="textField" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="btn_exit" layoutX="394.0" layoutY="7.0" mnemonicParsing="false" onAction="#clicked_btn_exit" styleClass="buttonStage" text="x" />
+      <Button fx:id="btn_minimize" layoutX="360.0" layoutY="7.0" mnemonicParsing="false" onAction="#clicked_btn_minimize" prefHeight="16.0" prefWidth="16.0" styleClass="buttonStage" text="_" />
+   </children>
+</AnchorPane>

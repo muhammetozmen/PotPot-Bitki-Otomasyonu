@@ -1,0 +1,87 @@
+.anchor {
+	-fx-background-color: #A2D3CC;
+}
+
+.anchorInner {
+	-fx-background-color: #345a68;
+	-fx-background-radius: 20px;
+}
+
+.navigatorV {
+	-fx-background-color: #68A494;
+}
+
+.navigatorH {
+	-fx-background-color: #54918c;
+}
+
+.textBold {
+
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: arial;
+    -fx-font-weight: bold;
+}
+
+.text {
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-family: arial;
+}
+
+.textField {  /* Add a class name for styling */
+  -fx-border-style: solid none solid none;  /* Borders for top, right, bottom, left */
+  -fx-border-width: 0 0 1px 0;  /* Widths for top, right, bottom, left */
+  -fx-border-color: transparent transparent #8d8d8d transparent;  /* Colors for top, right, bottom, left */
+  -fx-background-color: #f4f4f4;
+  -fx-text-fill: #161616;
+  
+  -fx-border-radius: 45px;
+  -fx-background-radius: 45px;
+  
+}
+
+.image-drop-shadow {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 8, 0.8, 0, 0);
+}
+
+
+
+.button {
+	
+    -fx-background-color: #467f83; 
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-family: arial;
+    -fx-font-weight: bold;
+}
+
+.button:hover {
+    -fx-background-color: #006929; 
+}
+
+.button:pressed {
+    -fx-background-color: #4CAF50; 
+}
+
+.buttonStage {
+	-fx-pref-width: 10px;
+    -fx-pref-height: 10px; 
+    -fx-background-color: #467f83; 
+}
+
+.buttonStage:hover {
+	-fx-pref-width: 10px;
+    -fx-pref-height: 10px; 
+    -fx-background-color: #ffa17a; 
+    
+}
+
+	/* TABLEVİEW */
+
+
+
+
+
+
+

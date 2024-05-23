@@ -1,0 +1,50 @@
+.table-view {
+    -fx-background-color: #A2D3CC; /* Matches anchor background color */
+}
+
+
+
+
+.table-view .column-header-background .filler {
+    -fx-background-color: transparent;
+}
+
+.table-row-cell {
+    -fx-background-color: #68A494; /* Matches navigatorV background color */
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #54918c; /* Matches navigatorH background color */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #467f83; /* Matches button background color */
+    -fx-text-fill: white;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #467f83; /* Matches button background color */
+    -fx-text-fill: white;
+}
+
+.table-cell {
+    -fx-padding: 5px 10px;
+    -fx-alignment: center-left;
+}
+
+.table-view:focused .table-row-cell:focused .table-cell {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-alignment: center-left;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell {
+    -fx-text-fill: white;
+}
+
+.table-view .table-cell:filled:selected {
+    -fx-text-fill: white;
+}
